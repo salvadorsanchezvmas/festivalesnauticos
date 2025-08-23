@@ -1,0 +1,78 @@
+/* Core variables */
+:root {
+  --color-primary: #1F2B7B;
+  --color-secondary: #F37121;
+  --color-gray: #e0e4e4;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --font-base: 'Work Sans', sans-serif;
+  --font-altares: 'Roboto Slab', serif;
+  --font-marxmas-main: 'Mont', sans-serif;
+  --font-marxmas-alt: 'Myriad Pro', sans-serif;
+  --spacing-section: 3rem;
+}
+
+body {
+  font-family: var(--font-base);
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.section {
+  padding: var(--spacing-section) 0;
+}
+
+.btn-cta {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.3s;
+}
+.btn-cta:hover,
+.btn-cta:focus {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.loader-overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Event specific styles */
+.event-altares {
+  font-family: var(--font-altares);
+}
+.event-altares h3 {
+  color: #00C6DC; /* event palette */
+}
+.event-marxmas {
+  font-family: var(--font-marxmas-main), var(--font-marxmas-alt), sans-serif;
+}
+.event-marxmas h3 {
+  color: #DB4242; /* event palette */
+}
+
+/* Utilities */
+.split-50-50 .col-md-6 {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  padding: 2rem 0;
+}
