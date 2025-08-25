@@ -24,7 +24,39 @@
     }
   },
   "tourism": {
-    "text": "Los Cabos es un destino incomparable donde el desierto se encuentra con el mar, ofreciendo aventuras, gastronomía y cultura."
+    "text": "Los Cabos es un destino incomparable donde el desierto se encuentra con el mar, ofreciendo aventuras, gastronomía y cultura.",
+    "gastronomia": {
+      "title": "Experiencias Gastronómicas",
+      "button": "Ver más",
+      "0": "Mercado Orgánico de San José del Cabo: abierto en temporada (noviembre–mayo), con productos frescos, quesos, panes y cocina local.",
+      "1": "Rutas de mariscos y tacos callejeros en Cabo San Lucas y San José: desde carritos hasta fondas familiares.",
+      "2": "Cenas en la playa: restaurantes que montan mesas frente al mar para experiencias románticas.",
+      "3": "Restaurantes de autor: chefs reconocidos como Enrique Olvera (Manta, en The Cape) y Javier Plascencia con propuestas de cocina mexicana contemporánea.",
+      "4": "Todos Santos: destino foodie con cafés, panaderías artesanales y cocina orgánica.",
+      "5": "Festival Sabores de Baja (en Miraflores, cerca de Los Cabos): celebra la cocina tradicional sudcaliforniana con productos locales."
+    },
+    "cultura": {
+      "title": "Cultura, Historia y Pueblos",
+      "button": "Ver más",
+      "0": "San José del Cabo: centro histórico con galerías de arte, arquitectura colonial y el Distrito del Arte.",
+      "1": "Todos Santos (Pueblo Mágico): bohemio, con galerías, surf en playa Cerritos y el famoso “Hotel California”.",
+      "2": "La Paz (capital de BCS): malecón, playas tranquilas y ambiente relajado.",
+      "3": "Misión de San José del Cabo Añuití y Misión de Santiago: testimonios coloniales."
+    },
+    "naturaleza": {
+      "title": "Atractivos Naturales",
+      "button": "Ver más",
+      "0": "El Arco de Cabo San Lucas: formación rocosa icónica donde se unen el Mar de Cortés y el Océano Pacífico.",
+      "1": "Playa del Amor y Playa del Divorcio: contrastan entre la calma del mar interior y la fuerza del Pacífico.",
+      "2": "Bahía de Chileno y Bahía Santa María: ideales para snorkel y buceo por sus aguas cristalinas.",
+      "3": "Cabo Pulmo: Parque Nacional y Patrimonio de la Humanidad con el único arrecife coralino vivo del Golfo de California.",
+      "4": "Parque Nacional Sierra de la Laguna: montañas, cascadas y rutas de senderismo con gran biodiversidad.",
+      "5": "Desierto y dunas de Baja California Sur: paisajes contrastantes con cactus y vistas al mar.",
+      "6": "Playa El Médano: la más popular en Cabo San Lucas, con ambiente turístico y deportes acuáticos.",
+      "7": "Playa Palmilla: tranquila y familiar en San José del Cabo.",
+      "8": "Playa Balandra (La Paz, a 2 horas): considerada una de las más hermosas de México.",
+      "9": "Playa Costa Azul: famosa por el surf."
+    }
   },
   "sponsorship": {
     "heading": "Participa como patrocinador",
@@ -43,7 +75,7 @@
     "text": "Mira cómo hemos transformado el mar en un escenario de luz y color."
   },
   "footer": {
-    "slogan": "Festivales Náuticos MX – Un mar de tradiciones",
+    "slogan": "Festivales Náuticos MX <br> Un mar de tradiciones",
     "links": "Síguenos en redes sociales | Contacto | Aviso de privacidad"
   },
   "nav": {

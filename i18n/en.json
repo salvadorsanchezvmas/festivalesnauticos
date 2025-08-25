@@ -24,7 +24,39 @@
     }
   },
   "tourism": {
-    "text": "Los Cabos is an unparalleled destination where the desert meets the sea, offering adventure, cuisine and culture."
+    "text": "Los Cabos is an incomparable destination where the desert meets the sea, offering adventure, gastronomy, and culture.",
+    "gastronomia": {
+      "title": "Gastronomic Experiences",
+      "button": "See more",
+      "0": "San José del Cabo Organic Market: open seasonally (November–May), with fresh produce, cheeses, breads, and local cuisine.",
+      "1": "Seafood and street taco routes in Cabo San Lucas and San José: from food carts to family-run eateries.",
+      "2": "Beach dinners: restaurants set up tables by the sea for romantic experiences.",
+      "3": "Signature restaurants: renowned chefs such as Enrique Olvera (Manta, at The Cape) and Javier Plascencia with contemporary Mexican cuisine proposals.",
+      "4": "Todos Santos: a foodie destination with cafés, artisan bakeries, and organic cuisine.",
+      "5": "Sabores de Baja Festival (in Miraflores, near Los Cabos): celebrates traditional Baja California Sur cuisine with local products."
+    },
+    "cultura": {
+      "title": "Culture, History & Towns",
+      "button": "See more",
+      "0": "San José del Cabo: historic center with art galleries, colonial architecture, and the Art District.",
+      "1": "Todos Santos (Pueblo Mágico): bohemian, with galleries, surfing at Cerritos Beach, and the famous “Hotel California.”",
+      "2": "La Paz (capital of BCS): boardwalk, calm beaches, and a relaxed atmosphere.",
+      "3": "Mission of San José del Cabo Añuití and Mission of Santiago: colonial landmarks."
+    },
+    "naturaleza": {
+      "title": "Natural Attractions",
+      "button": "See more",
+      "0": "El Arco of Cabo San Lucas: iconic rock formation where the Sea of Cortez meets the Pacific Ocean.",
+      "1": "Lover’s Beach and Divorce Beach: contrasting the calm of the inner sea and the strength of the Pacific.",
+      "2": "Chileno Bay and Santa Maria Bay: ideal for snorkeling and diving thanks to their crystal-clear waters.",
+      "3": "Cabo Pulmo: National Park and World Heritage Site with the only living coral reef in the Gulf of California.",
+      "4": "Sierra de la Laguna National Park: mountains, waterfalls, and hiking trails with great biodiversity.",
+      "5": "Desert and dunes of Baja California Sur: contrasting landscapes with cacti and sea views.",
+      "6": "El Médano Beach: the most popular in Cabo San Lucas, with a tourist atmosphere and water sports.",
+      "7": "Palmilla Beach: calm and family-friendly in San José del Cabo.",
+      "8": "Balandra Beach (La Paz, 2 hours away): considered one of the most beautiful in Mexico.",
+      "9": "Costa Azul Beach: famous for surfing."
+    }
   },
   "sponsorship": {
     "heading": "Join as a sponsor",
@@ -43,7 +75,7 @@
     "text": "See how we've transformed the sea into a stage of light and color."
   },
   "footer": {
-    "slogan": "Festivales Náuticos MX – A sea of traditions",
+    "slogan": "Festivales Náuticos MX <br> A sea of traditions",
     "links": "Follow us on social media | Contact | Privacy notice"
   },
   "nav": {

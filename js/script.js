@@ -64,7 +64,7 @@ jQuery(function ($) {
     items: 1,
     loop: true,
     nav: false,
-    autoplay:true,
+    autoplay: true,
     dots: false
   });
 
@@ -102,46 +102,79 @@ if (form) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    $('#banner-slider').owlCarousel({
-        items: 1,
-        loop: true,
-        nav: true,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 7000,
-        autoplayHoverPause: true,
-        navText: [
-            '<span class="carousel-control-prev-icon" aria-label="Anterior"></span>',
-            '<span class="carousel-control-next-icon" aria-label="Siguiente"></span>'
-        ]
-    });
+  $('#banner-slider').owlCarousel({
+    items: 1,
+    loop: true,
+    nav: true,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 7000,
+    autoplayHoverPause: true,
+    navText: [
+      '<span class="carousel-control-prev-icon" aria-label="Anterior"></span>',
+      '<span class="carousel-control-next-icon" aria-label="Siguiente"></span>'
+    ]
+  });
 });
 
-$(function () {
-  var $nav = $('.navbar'); // Adjust selector if your nav uses a different class or id
-  var $logo = $nav.find('img.navbar-logo'); // Add class 'navbar-logo' to your logo <img>
-  $nav.css({
-    'background-color': 'transparent',
-    'color': '#fff'
-  });
-  $nav.find('a, .navbar-brand, .nav-link').css('color', '#fff');
-  if ($logo.length) {
-    $logo.attr('src', 'images/logowhite.png');
-  }
+function isMobileScreen() {
+  return window.innerWidth <= 967;
+}
 
-  $(window).on('scroll', function () {
-    if ($(window).scrollTop() >= 50) {
-      $nav.css('background-color', 'rgba(255,255,255,0.95)');
-      $nav.find('a, .navbar-brand, .nav-link').css('color', '#1F2B7B');
-      if ($logo.length) {
-        $logo.attr('src', 'images/logo.png');
+$(function () {
+  if (!isMobileScreen()) {
+    var $nav = $('.navbar'); // Adjust selector if your nav uses a different class or id
+    var $logo = $nav.find('img.navbar-logo'); // Add class 'navbar-logo' to your logo <img>
+    $nav.css({
+      'background-color': 'transparent',
+      'color': '#fff'
+    });
+    $nav.find('a, .navbar-brand, .nav-link').css('color', '#fff');
+    if ($logo.length) {
+      $logo.attr('src', 'images/logowhite.png');
+    }
+
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop() >= 50) {
+        $nav.css('background-color', 'rgba(255,255,255,0.95)');
+        $nav.find('a, .navbar-brand, .nav-link').css('color', '#1F2B7B');
+        if ($logo.length) {
+          $logo.attr('src', 'images/logo.png');
+        }
+      } else {
+        $nav.css('background-color', 'transparent');
+        $nav.find('a, .navbar-brand, .nav-link').css('color', '#fff');
+        if ($logo.length) {
+          $logo.attr('src', 'images/logowhite.png');
+        }
       }
-    } else {
-      $nav.css('background-color', 'transparent');
-      $nav.find('a, .navbar-brand, .nav-link').css('color', '#fff');
-      if ($logo.length) {
-        $logo.attr('src', 'images/logowhite.png');
+    });
+  }
+});
+
+
+// Place this script after your gallery section is rendered (e.g., at the end of your JS file or in a DOMContentLoaded event)
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('#gallery .row a').forEach(function (el) {
+    // Only process if not already duplicated
+    if (!el.classList.contains('gallery-duplicated')) {
+      // Clone the <a> element
+      var clone = el.cloneNode(true);
+      clone.style.display = 'none';
+      clone.classList.add('gallery-duplicated');
+
+      // Get the <img> inside and its alt attribute
+      var img = clone.querySelector('img');
+      if (img && img.alt) {
+        if (img.alt.toLowerCase().includes('altares')) {
+          clone.setAttribute('data-fancybox', 'altares2024');
+        } else if (img.alt.toLowerCase().includes('myc')) {
+          clone.setAttribute('data-fancybox', 'marxmas2024');
+        }
       }
+
+      // Insert the hidden clone after the original
+      el.parentNode.appendChild(clone);
     }
   });
 });

@@ -99,7 +99,8 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="https://festivalesnauticos.com/">
-                    <img src="images/logo.png" class="navbar-logo" alt="Festivales Náuticos MX" width="40" height="40" />
+                    <img src="images/logo.png" class="navbar-logo" alt="Festivales Náuticos MX" width="40"
+                        height="40" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
                     aria-controls="offcanvasNav" aria-label="Toggle navigation">
@@ -185,15 +186,20 @@
         </section>
 
         <!-- About / General Info -->
-        <section id="about" class="section">
-            <div class="container split-50-50">
-                <div class="row">
-                    <div class="col-md-6 text-center">
-                        <img src="images/ALTARES/IMG_3085.jpg" class="img-fluid rounded" alt="Información de eventos"
-                            loading="lazy" decoding="async" />
-                    </div>
-                    <div class="col-md-6">
-                        <p data-i18n="about.paragraph">Nuestros festivales combinan la majestuosidad del mar...</p>
+        <section id="about" class="section p-0 position-relative"
+            style="background: url('images/about.png') center center/cover no-repeat; min-height: 100vh;">
+            <div class="container h-100 d-flex align-items-center justify-content-center"
+                style="min-height:80vh; position:relative;">
+                <div class="card shadow-lg rounded-4 p-4" style="max-width:1200px;background:rgba(255,255,255,0.97);">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center mb-3 mb-md-0">
+                            <img src="images/ALTARES/IMG_3085.jpg" class="img-fluid rounded"
+                                alt="Información de eventos" decoding="async" />
+                        </div>
+                        <div class="col-md-6 text-justify">
+                            <h3 class="mb-4 fw-bold" data-i18n="meta.title">Festivales Náuticos MX</h3>
+                            <p data-i18n="about.paragraph">Nuestros festivales combinan la majestuosidad del mar...</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -210,39 +216,40 @@
                             <div class="owl-carousel" id="altares-carousel">
                                 <div class="item">
                                     <img src="images/ALTARES/IMG_3085.jpg" alt="Altares 1" class="img-fluid rounded"
-                                        loading="lazy" decoding="async" />
+                                        decoding="async" />
                                 </div>
                                 <div class="item">
                                     <img src="images/ALTARES/IMG_3680.jpg" alt="Altares 2" class="img-fluid rounded"
-                                        loading="lazy" decoding="async" />
+                                        decoding="async" />
                                 </div>
                                 <div class="item">
                                     <img src="images/ALTARES/IMG_3095.jpg" alt="Altares 3" class="img-fluid rounded"
-                                        loading="lazy" decoding="async" />
+                                        decoding="async" />
                                 </div>
                                 <div class="item">
                                     <img src="images/ALTARES/IMG_2987.jpg" alt="Altares 4" class="img-fluid rounded"
-                                        loading="lazy" decoding="async" />
+                                        decoding="async" />
                                 </div>
                                 <div class="item">
                                     <img src="images/ALTARES/IMG_3810.jpg" alt="Altares 5" class="img-fluid rounded"
-                                        loading="lazy" decoding="async" />
+                                        decoding="async" />
                                 </div>
                             </div>
-                            <a href="images/altares2024-1.jpg" data-fancybox="altares2024"
+                            <a href="images/ALTARES/IMG_3810.jpg" data-fancybox="altares2024"
                                 class="btn btn-cta mt-3 d-block text-center" data-i18n="events.altares.cta">Revive los
                                 momentos más espectaculares de la edición pasada.</a>
-                            <a href="images/altares2024-2.jpg" data-fancybox="altares2024" style="display:none;">
-                                <img src="images/altares2024-2.jpg" alt="Altares 2024" />
+                            <a href="images/ALTARES/IMG_2987.jpg" data-fancybox="altares2024" style="display:none;">
+                                <img src="images/ALTARES/IMG_2987.jpg" alt="Altares 2024" />
                             </a>
                         </div>
                         <!-- Info 50% -->
                         <div class="col-md-6 order-1 order-md-2 p-4">
-                            <img src="images/Altares en el mar LOGO V3 FINAL.png" class="img-fluid mb-3"
-                                alt="Altares en el Mar" loading="lazy" decoding="async" style="max-width:220px;" />
-                            <h3 data-i18n="events.altares.title">Altares en el Mar 2025</h3>
-                            <p data-i18n="events.altares.info">“Altares en el Mar” es un festival inmersivo...</p>
-                            <p data-i18n="events.altares.dates">1–4 de noviembre 2025 | Cabo San Lucas, B.C.S.</p>
+                            <img src="images/Altares en el mar LOGO FINAL.png"
+                                class="img-fluid mb-3 p-5 mx-auto d-block" alt="Altares en el Mar" decoding="async"" />
+                            <h3 data-i18n=" events.altares.title" class="mb-3">Altares en el Mar 2025</h3>
+                            <p data-i18n="events.altares.info" class="mb-3">“Altares en el Mar” es un festival
+                                inmersivo...</p>
+                            <p data-i18n="events.altares.dates" class="fw-bold">1–4 de noviembre 2025 | Cabo San Lucas, B.C.S.</p>
                         </div>
 
                         <!-- Mar & Xmas -->
@@ -252,41 +259,43 @@
                                 <div class="col-md-6 order-2">
                                     <div class="owl-carousel" id="marxmas-carousel">
                                         <div class="item">
-                                            <img src="images/MYC/2023/IMG_3047.JPG" alt="Marxmas 1" class="img-fluid rounded"
-                                                loading="lazy" decoding="async" />
+                                            <img src="images/MYC/2023/IMG_3047.JPG" alt="Marxmas 1"
+                                                class="img-fluid rounded" decoding="async" />
                                         </div>
                                         <div class="item">
-                                            <img src="images/MYC/2023/_MG_3014.JPG" alt="Marxmas 2" class="img-fluid rounded"
-                                                loading="lazy" decoding="async" />
+                                            <img src="images/MYC/2023/_MG_3014.JPG" alt="Marxmas 2"
+                                                class="img-fluid rounded" decoding="async" />
                                         </div>
                                         <div class="item">
-                                            <img src="images/MYC/2023/IMG_3054.JPG" alt="Marxmas 3" class="img-fluid rounded"
-                                                loading="lazy" decoding="async" />
+                                            <img src="images/MYC/2023/IMG_3054.JPG" alt="Marxmas 3"
+                                                class="img-fluid rounded" decoding="async" />
                                         </div>
                                         <div class="item">
-                                            <img src="images/MYC/2023/IMG_3040.JPG" alt="Marxmas 4" class="img-fluid rounded"
-                                                loading="lazy" decoding="async" />
+                                            <img src="images/MYC/2023/IMG_3040.JPG" alt="Marxmas 4"
+                                                class="img-fluid rounded" decoding="async" />
                                         </div>
                                         <div class="item">
-                                            <img src="images/MYC/2023/IMG_3044.JPG" alt="Marxmas 5" class="img-fluid rounded"
-                                                loading="lazy" decoding="async" />
+                                            <img src="images/MYC/2023/IMG_3044.JPG" alt="Marxmas 5"
+                                                class="img-fluid rounded" decoding="async" />
                                         </div>
                                     </div>
-                                    <a href="images/marxmas2024-1.jpg" data-fancybox="marxmas2024"
+                                    <a href="images/MYC/2023/IMG_3040.JPG" data-fancybox="marxmas2024"
                                         class="btn btn-cta mt-3 d-block text-center"
                                         data-i18n="events.marxmas.cta">Descubre cómo vivimos la Navidad en el mar.</a>
-                                    <a href="images/marxmas2024-2.jpg" data-fancybox="marxmas2024"
+                                    <a href="images/MYC/2023/IMG_3044.JPG" data-fancybox="marxmas2024"
                                         style="display:none;">
-                                        <img src="images/marxmas2024-2.jpg" alt="Mar & Xmas 2024" />
+                                        <img src="images/MYC/2023/IMG_3044.JPG" alt="Mar & Xmas 2024" />
                                     </a>
                                 </div>
                                 <!-- Info 50% -->
                                 <div class="col-md-6 order-1 p-4">
                                     <img src="images/logo final.png" class="img-fluid mb-3" alt="Mar & Xmas"
-                                        loading="lazy" decoding="async" style="max-width:220px;" />
-                                    <h3 data-i18n="events.marxmas.title">Mar & Xmas 2025</h3>
-                                    <p data-i18n="events.marxmas.info">“Mar & Xmas” celebra la temporada navideña...</p>
-                                    <p data-i18n="events.marxmas.dates">13 de diciembre 2025 | Cabo San Lucas, B.C.S.
+                                        decoding="async"" />
+                                    <h3 data-i18n=" events.marxmas.title" class="mb-3">Mar & Xmas 2025</h3>
+                                    <p data-i18n="events.marxmas.info" class="mb-3">“Mar & Xmas” celebra la temporada
+                                        navideña...</p>
+                                    <p data-i18n="events.marxmas.dates" class="fw-bold">13 de diciembre 2025 | Cabo San Lucas, B.C.S.
+                                    </p>
                                     </p>
                                 </div>
                             </div>
@@ -294,33 +303,112 @@
                     </div>
         </section>
 
-        <!-- Tourism -->
         <section id="tourism" class="section bg-light">
             <div class="container">
                 <h2 class="text-center mb-4" data-i18n="nav.tourism">Turismo Los Cabos</h2>
                 <p class="text-center" data-i18n="tourism.text">Los Cabos es un destino incomparable...</p>
                 <div class="row mt-4">
-                    <div class="col-md-4 mb-3">
-                        <div class="card h-100 text-center p-3">
-                            <div class="card-body">
-                                <i class="fa fa-ship fa-2x mb-2" aria-hidden="true"></i>
-                                <p>Excursiones</p>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Card 1: Gastronomía -->
                     <div class="col-md-4 mb-3">
                         <div class="card h-100 text-center p-3">
                             <div class="card-body">
                                 <i class="fa fa-utensils fa-2x mb-2" aria-hidden="true"></i>
-                                <p>Gastronomía</p>
+                                <p class="my-2" data-i18n="tourism.gastronomia.title">Experiencias Gastronómicas</p>
+                                <div class="accordion" id="accordionGastronomia">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingGastro">
+                                            <button class="accordion-button collapsed text-black" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseGastro"
+                                                aria-expanded="false" aria-controls="collapseGastro"
+                                                data-i18n="tourism.gastronomia.button">
+                                                Ver más
+                                            </button>
+                                        </h2>
+                                        <div id="collapseGastro" class="accordion-collapse collapse"
+                                            aria-labelledby="headingGastro" data-bs-parent="#accordionGastronomia">
+                                            <div class="accordion-body text-start small mt-3">
+                                                <ul class="mb-0 ps-3">
+                                                    <li class="text-black" data-i18n="tourism.gastronomia.0"></li>
+                                                    <li class="text-black" data-i18n="tourism.gastronomia.1"></li>
+                                                    <li class="text-black" data-i18n="tourism.gastronomia.2"></li>
+                                                    <li class="text-black" data-i18n="tourism.gastronomia.3"></li>
+                                                    <li class="text-black" data-i18n="tourism.gastronomia.4"></li>
+                                                    <li class="text-black" data-i18n="tourism.gastronomia.5"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Card 2: Cultura, Historia y Pueblos -->
                     <div class="col-md-4 mb-3">
                         <div class="card h-100 text-center p-3">
                             <div class="card-body">
-                                <i class="fa fa-sun fa-2x mb-2" aria-hidden="true"></i>
-                                <p>Clima</p>
+                                <i class="fa fa-landmark fa-2x mb-2" aria-hidden="true"></i>
+                                <p class="my-2" data-i18n="tourism.cultura.title">Cultura, Historia y Pueblos</p>
+                                <div class="accordion" id="accordionCultura">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingCultura">
+                                            <button class="accordion-button collapsed text-black" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseCultura"
+                                                aria-expanded="false" aria-controls="collapseCultura"
+                                                data-i18n="tourism.cultura.button">
+                                                Ver más
+                                            </button>
+                                        </h2>
+                                        <div id="collapseCultura" class="accordion-collapse collapse"
+                                            aria-labelledby="headingCultura" data-bs-parent="#accordionCultura">
+                                            <div class="accordion-body text-start small mt-3">
+                                                <ul class="mb-0 ps-3">
+                                                    <li class="text-black" data-i18n="tourism.cultura.0"></li>
+                                                    <li class="text-black" data-i18n="tourism.cultura.1"></li>
+                                                    <li class="text-black" data-i18n="tourism.cultura.2"></li>
+                                                    <li class="text-black" data-i18n="tourism.cultura.3"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3: Atractivos Naturales -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 text-center p-3">
+                            <div class="card-body">
+                                <i class="fa fa-tree fa-2x mb-2" aria-hidden="true"></i>
+                                <p class="my-2" data-i18n="tourism.naturaleza.title">Atractivos Naturales</p>
+                                <div class="accordion" id="accordionNaturales">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingNaturales">
+                                            <button class="accordion-button collapsed text-black" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseNaturales"
+                                                aria-expanded="false" aria-controls="collapseNaturales"
+                                                data-i18n="tourism.naturaleza.button">
+                                                Ver más
+                                            </button>
+                                        </h2>
+                                        <div id="collapseNaturales" class="accordion-collapse collapse"
+                                            aria-labelledby="headingNaturales" data-bs-parent="#accordionNaturales">
+                                            <div class="accordion-body text-start small mt-3">
+                                                <ul class="mb-0 ps-3">
+                                                    <li class="text-black" data-i18n="tourism.naturaleza.0"></li>
+                                                    <li class="text-black" data-i18n="tourism.naturaleza.1"></li>
+                                                    <li class="text-black" data-i18n="tourism.naturaleza.2"></li>
+                                                    <li class="text-black" data-i18n="tourism.naturaleza.3"></li>
+                                                    <li class="text-black" data-i18n="tourism.naturaleza.4"></li>
+                                                    <li class="text-black" data-i18n="tourism.naturaleza.5"></li>
+                                                    <li class="text-black" data-i18n="tourism.naturaleza.6"></li>
+                                                    <li class="text-black" data-i18n="tourism.naturaleza.7"></li>
+                                                    <li class="text-black" data-i18n="tourism.naturaleza.8"></li>
+                                                    <li class="text-black" data-i18n="tourism.naturaleza.9"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -330,7 +418,7 @@
 
         <section id="gallery" class="section bg-light">
             <div class="container">
-                <h2 class="text-center" data-i18n="gallery.heading">Galería de eventos pasados</h2>
+                <h2 class="text-center mb-3" data-i18n="gallery.heading">Galería de eventos pasados</h2>
                 <p class="text-center" data-i18n="gallery.text">Mira cómo hemos transformado el mar...</p>
                 <div class="row g-3 mt-4">
                     <!-- 6x6 grid: 12 from ALTARES, 12 from MYC -->
@@ -338,146 +426,151 @@
                     <div class="col-6 col-md-2">
                         <a href="images/ALTARES/IMG_3085.jpg" data-fancybox="gallery" data-caption="Altares 1">
                             <img src="images/ALTARES/IMG_3085.jpg" alt="Altares 1" class="img-fluid rounded"
-                                loading="lazy" decoding="async" />
+                                decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="images/ALTARES/IMG_3039.jpg" data-fancybox="gallery" data-caption="Altares 2">
                             <img src="images/ALTARES/IMG_3039.jpg" alt="Altares 2" class="img-fluid rounded"
-                                loading="lazy" decoding="async" />
+                                decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="images/ALTARES/IMG_3095.jpg" data-fancybox="gallery" data-caption="Altares 3">
                             <img src="images/ALTARES/IMG_3095.jpg" alt="Altares 3" class="img-fluid rounded"
-                                loading="lazy" decoding="async" />
+                                decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="images/ALTARES/IMG_2962.jpg" data-fancybox="gallery" data-caption="Altares 4">
                             <img src="images/ALTARES/IMG_2962.jpg" alt="Altares 4" class="img-fluid rounded"
-                                loading="lazy" decoding="async" />
+                                decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="images/ALTARES/IMG_2954.jpg" data-fancybox="gallery" data-caption="Altares 5">
                             <img src="images/ALTARES/IMG_2954.jpg" alt="Altares 5" class="img-fluid rounded"
-                                loading="lazy" decoding="async" />
+                                decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="images/ALTARES/IMG_3680.jpg" data-fancybox="gallery" data-caption="Altares 6">
                             <img src="images/ALTARES/IMG_3680.jpg" alt="Altares 6" class="img-fluid rounded"
-                                loading="lazy" decoding="async" />
+                                decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="images/ALTARES/IMG_3694.jpg" data-fancybox="gallery" data-caption="Altares 7">
                             <img src="images/ALTARES/IMG_3694.jpg" alt="Altares 7" class="img-fluid rounded"
-                                loading="lazy" decoding="async" />
+                                decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="images/ALTARES/IMG_3342.jpg" data-fancybox="gallery" data-caption="Altares 8">
                             <img src="images/ALTARES/IMG_3342.jpg" alt="Altares 8" class="img-fluid rounded"
-                                loading="lazy" decoding="async" />
+                                decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="images/ALTARES/IMG_3125.jpg" data-fancybox="gallery" data-caption="Altares 9">
                             <img src="images/ALTARES/IMG_3125.jpg" alt="Altares 9" class="img-fluid rounded"
-                                loading="lazy" decoding="async" />
+                                decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="images/ALTARES/IMG_3130.jpg" data-fancybox="gallery" data-caption="Altares 10">
                             <img src="images/ALTARES/IMG_3130.jpg" alt="Altares 10" class="img-fluid rounded"
-                                loading="lazy" decoding="async" />
+                                decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="images/ALTARES/IMG_3677.jpg" data-fancybox="gallery" data-caption="Altares 11">
                             <img src="images/ALTARES/IMG_3677.jpg" alt="Altares 11" class="img-fluid rounded"
-                                loading="lazy" decoding="async" />
+                                decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="images/ALTARES/IMG_3673.jpg" data-fancybox="gallery" data-caption="Altares 12">
                             <img src="images/ALTARES/IMG_3673.jpg" alt="Altares 12" class="img-fluid rounded"
-                                loading="lazy" decoding="async" />
+                                decoding="async" />
                         </a>
                     </div>
                     <!-- MYC images -->
                     <div class="col-6 col-md-2">
                         <a href="images/MYC/20191220_163549.jpg" data-fancybox="gallery" data-caption="MYC 1">
-                            <img src="images/MYC/20191220_163549.jpg" alt="MYC 1" class="img-fluid rounded" loading="lazy"
+                            <img src="images/MYC/20191220_163549.jpg" alt="MYC 1" class="img-fluid rounded"
                                 decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="images/MYC/20191220_164029.jpg" data-fancybox="gallery" data-caption="MYC 2">
-                            <img src="images/MYC/20191220_164029.jpg" alt="MYC 2" class="img-fluid rounded" loading="lazy"
+                            <img src="images/MYC/20191220_164029.jpg" alt="MYC 2" class="img-fluid rounded"
                                 decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="images/MYC/20191221_195333.jpg" data-fancybox="gallery" data-caption="MYC 3">
-                            <img src="images/MYC/20191221_195333.jpg" alt="MYC 3" class="img-fluid rounded" loading="lazy"
+                            <img src="images/MYC/20191221_195333.jpg" alt="MYC 3" class="img-fluid rounded"
                                 decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="images/MYC/20191221_200907.jpg" data-fancybox="gallery" data-caption="MYC 4">
-                            <img src="images/MYC/20191221_200907.jpg" alt="MYC 4" class="img-fluid rounded" loading="lazy"
+                            <img src="images/MYC/20191221_200907.jpg" alt="MYC 4" class="img-fluid rounded"
                                 decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="images/MYC/IMG_2250.jpg" data-fancybox="gallery" data-caption="MYC 5">
-                            <img src="images/MYC/IMG_2250.jpg" alt="MYC 5" class="img-fluid rounded" loading="lazy"
-                                decoding="async" />
+                            <img src="images/MYC/IMG_2250.jpg" alt="MYC 5" class="img-fluid rounded" decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
                         <a href="images/MYC/tradicion.jpeg" data-fancybox="gallery" data-caption="MYC 6">
-                            <img src="images/MYC/tradicion.jpeg" alt="MYC 6" class="img-fluid rounded" loading="lazy"
+                            <img src="images/MYC/tradicion.jpeg" alt="MYC 6" class="img-fluid rounded"
                                 decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
-                        <a href="images/MYC/FOTOFESTIVALNAUTICO20183(CABOVISION).jpg" data-fancybox="gallery" data-caption="MYC 7">
-                            <img src="images/MYC/FOTOFESTIVALNAUTICO20183(CABOVISION).jpg" alt="MYC 7" class="img-fluid rounded" loading="lazy"
-                                decoding="async" />
+                        <a href="images/MYC/FOTOFESTIVALNAUTICO20183(CABOVISION).jpg" data-fancybox="gallery"
+                            data-caption="MYC 7">
+                            <img src="images/MYC/FOTOFESTIVALNAUTICO20183(CABOVISION).jpg" alt="MYC 7"
+                                class="img-fluid rounded" decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
-                        <a href="images/MYC/FOTOFESTIVALNAUTICO20181(CABOVISION).jpg" data-fancybox="gallery" data-caption="MYC 8">
-                            <img src="images/MYC/FOTOFESTIVALNAUTICO20181(CABOVISION).jpg" alt="MYC 8" class="img-fluid rounded" loading="lazy"
-                                decoding="async" />
+                        <a href="images/MYC/FOTOFESTIVALNAUTICO20181(CABOVISION).jpg" data-fancybox="gallery"
+                            data-caption="MYC 8">
+                            <img src="images/MYC/FOTOFESTIVALNAUTICO20181(CABOVISION).jpg" alt="MYC 8"
+                                class="img-fluid rounded" decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
-                        <a href="images/MYC/FOTOFESTIVALNAUTICO201810(CABOVISION).jpg" data-fancybox="gallery" data-caption="MYC 9">
-                            <img src="images/MYC/FOTOFESTIVALNAUTICO201810(CABOVISION).jpg" alt="MYC 9" class="img-fluid rounded" loading="lazy"
-                                decoding="async" />
+                        <a href="images/MYC/FOTOFESTIVALNAUTICO201810(CABOVISION).jpg" data-fancybox="gallery"
+                            data-caption="MYC 9">
+                            <img src="images/MYC/FOTOFESTIVALNAUTICO201810(CABOVISION).jpg" alt="MYC 9"
+                                class="img-fluid rounded" decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
-                        <a href="images/MYC/FOTOFESTIVALNAUTICO20186(CABOVISION).jpg" data-fancybox="gallery" data-caption="MYC 10">
-                            <img src="images/MYC/FOTOFESTIVALNAUTICO20186(CABOVISION).jpg" alt="MYC 10" class="img-fluid rounded" loading="lazy"
-                                decoding="async" />
+                        <a href="images/MYC/FOTOFESTIVALNAUTICO20186(CABOVISION).jpg" data-fancybox="gallery"
+                            data-caption="MYC 10">
+                            <img src="images/MYC/FOTOFESTIVALNAUTICO20186(CABOVISION).jpg" alt="MYC 10"
+                                class="img-fluid rounded" decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
-                        <a href="images/MYC//FOTOFESTIVALNAUTICO20185(CABOVISION).jpg" data-fancybox="gallery" data-caption="MYC 11">
-                            <img src="images/MYC/FOTOFESTIVALNAUTICO20185(CABOVISION).jpg" alt="MYC 11" class="img-fluid rounded" loading="lazy"
-                                decoding="async" />
+                        <a href="images/MYC//FOTOFESTIVALNAUTICO20185(CABOVISION).jpg" data-fancybox="gallery"
+                            data-caption="MYC 11">
+                            <img src="images/MYC/FOTOFESTIVALNAUTICO20185(CABOVISION).jpg" alt="MYC 11"
+                                class="img-fluid rounded" decoding="async" />
                         </a>
                     </div>
                     <div class="col-6 col-md-2">
-                        <a href="images/MYC/2024/470314763_17891210037110531_2337695173500264920_n.jpg" data-fancybox="gallery" data-caption="MYC 12">
-                            <img src="images/MYC/2024/470314763_17891210037110531_2337695173500264920_n.jpg" alt="MYC 12" class="img-fluid rounded" loading="lazy"
-                                decoding="async" />
+                        <a href="images/MYC/2024/470314763_17891210037110531_2337695173500264920_n.jpg"
+                            data-fancybox="gallery" data-caption="MYC 12">
+                            <img src="images/MYC/2024/470314763_17891210037110531_2337695173500264920_n.jpg"
+                                alt="MYC 12" class="img-fluid rounded" decoding="async" />
                         </a>
                     </div>
                 </div>
@@ -487,7 +580,7 @@
         <!-- Sponsorship -->
         <section id="sponsorship" class="section">
             <div class="container">
-                <h2 class="text-center" data-i18n="sponsorship.heading">Participa como patrocinador</h2>
+                <h2 class="text-center mb-3" data-i18n="sponsorship.heading">Participa como patrocinador</h2>
                 <p class="text-center" data-i18n="sponsorship.info">Sé parte de un festival que conecta marcas...</p>
 
                 <form id="contactForm" class="mt-4" action="php/form.php" method="POST">
@@ -525,6 +618,13 @@
             </div>
         </section>
     </main>
+
+    <!-- Add this section where you want the animated waves background -->
+    <section class="ocean-section position-relative" style="height: 120px; overflow: hidden;">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+    </section>
 
     <!-- Footer -->
     <!-- ...existing code... -->
