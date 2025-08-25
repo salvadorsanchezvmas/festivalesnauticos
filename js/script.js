@@ -63,8 +63,9 @@ jQuery(function ($) {
   $('#altares-carousel, #marxmas-carousel').owlCarousel({
     items: 1,
     loop: true,
-    nav: true,
-    dots: true
+    nav: false,
+    autoplay:true,
+    dots: false
   });
 
   // fancybox
@@ -99,3 +100,48 @@ if (form) {
     }
   });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    $('#banner-slider').owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 7000,
+        autoplayHoverPause: true,
+        navText: [
+            '<span class="carousel-control-prev-icon" aria-label="Anterior"></span>',
+            '<span class="carousel-control-next-icon" aria-label="Siguiente"></span>'
+        ]
+    });
+});
+
+$(function () {
+  var $nav = $('.navbar'); // Adjust selector if your nav uses a different class or id
+  var $logo = $nav.find('img.navbar-logo'); // Add class 'navbar-logo' to your logo <img>
+  $nav.css({
+    'background-color': 'transparent',
+    'color': '#fff'
+  });
+  $nav.find('a, .navbar-brand, .nav-link').css('color', '#fff');
+  if ($logo.length) {
+    $logo.attr('src', 'images/logowhite.png');
+  }
+
+  $(window).on('scroll', function () {
+    if ($(window).scrollTop() >= 50) {
+      $nav.css('background-color', 'rgba(255,255,255,0.95)');
+      $nav.find('a, .navbar-brand, .nav-link').css('color', '#1F2B7B');
+      if ($logo.length) {
+        $logo.attr('src', 'images/logo.png');
+      }
+    } else {
+      $nav.css('background-color', 'transparent');
+      $nav.find('a, .navbar-brand, .nav-link').css('color', '#fff');
+      if ($logo.length) {
+        $logo.attr('src', 'images/logowhite.png');
+      }
+    }
+  });
+});
