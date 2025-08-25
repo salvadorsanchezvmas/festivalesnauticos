@@ -23,7 +23,7 @@ if (!$name || !$email || !$phone || !$message || !$consent || !$recaptcha) {
 }
 
 // Verify reCAPTCHA
-$secret = 'YOUR_SECRET_KEY'; // TODO: replace with actual secret key
+$secret = '6LdcOq8rAAAAAMfUbQNsUaeHP9YHnA0tovpIH8nr'; // TODO: replace with actual secret key
 $verify = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$recaptcha}&remoteip=" . $_SERVER['REMOTE_ADDR']);
 $responseData = json_decode($verify);
 

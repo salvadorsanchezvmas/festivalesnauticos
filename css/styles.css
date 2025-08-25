@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url(../css/font/WorkSans-ExtraLightItalic.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url(../css/font/RobotoSlab-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url(../css/font/myrad.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url(../css/font/Motteka.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Core variables */
 :root {
   --color-primary: #1F2B7B;
