@@ -41,6 +41,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: var(--font-base);
   color: var(--color-black);
   background-color: var(--color-white);
@@ -93,6 +94,97 @@ body {
 }
 .event-marxmas h3 {
   color: #DB4242; /* event palette */
+}
+
+.hero-image{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.header-video{
+    overflow: hidden;
+    position: absolute;
+    top: -10;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+}
+
+.header-video > video{
+    min-width: 100%;
+    max-height: 100%;
+}
+
+/* .header-overlay{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 1;
+} */
+
+.header-content{
+    z-index: 2;
+    color: var(--light-text-color);
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    /* margin: auto; */
+    padding: 1rem;
+}
+
+.header-content div{
+    margin: 2rem 0;
+    color: var(--color-white);
+}
+
+.header-content div > a > img {
+    width: 20rem;
+    filter: drop-shadow(2px 2px 3px black)
+}
+
+@media screen and (min-width:768px ){
+    .header-content div > a > img {
+        width: 25rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (min-width:1024px ){
+    .home{
+        height: 78vh;
+    }
+
+    .header-content{
+        grid-template-columns: repeat(2, 40%);
+    }
+
+    .header-content div:last-child{
+        display: flex;
+        flex-flow: column;
+        margin-left: 1rem;
+    }
+
+    .header-content div:last-child a{
+        align-self: end;
+    }
+
+    .header-content div > a > img {
+        width: 25rem;
+    }
+}
+
+#about{
+    height: 100vh;
+    width: 100vw;
 }
 
 /* Utilities */
